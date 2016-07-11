@@ -1000,6 +1000,8 @@ declare namespace  __React {
          * Sets the toolbar title color.
          */
         titleColor?: string
+
+        style?: ViewStyle
     }
 
     export interface ToolbarAndroidStatic extends React.ComponentClass<ToolbarAndroidProperties> {
