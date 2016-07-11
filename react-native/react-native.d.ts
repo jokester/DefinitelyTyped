@@ -918,7 +918,7 @@ declare namespace  __React {
         showWithText?: boolean
     }
 
-    export interface ToolbarAndroidProperties extends React.Props<ToolbarAndroidStatic> {
+    export type ToolbarAndroidProperties = ViewProperties & React.Props<ToolbarAndroidStatic> & {
         actions?: ToolbarAndroidAction[]
 
         /**
