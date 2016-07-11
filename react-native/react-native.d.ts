@@ -918,7 +918,7 @@ declare namespace  __React {
         showWithText?: boolean
     }
 
-    export interface ToolbarAndroidProperties extends React.Props<ToolbarAndroidStatic> {
+    export interface ToolbarAndroidProperties extends ViewProperties, React.Props<ToolbarAndroidStatic> {
         actions?: ToolbarAndroidAction[]
 
         /**
@@ -1000,6 +1000,8 @@ declare namespace  __React {
          * Sets the toolbar title color.
          */
         titleColor?: string
+
+        ref?: Ref<ToolbarAndroidStatic>
     }
 
     export interface ToolbarAndroidStatic extends React.ComponentClass<ToolbarAndroidProperties> {
